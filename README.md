@@ -1,3 +1,3 @@
 # NkosinathiWeb
-Learningg springboot web
+Learning springboot web
 Committing changes from VsCode.
