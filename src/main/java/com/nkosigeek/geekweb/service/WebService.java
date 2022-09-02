@@ -1,5 +1,7 @@
 package com.nkosigeek.geekweb.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,5 +18,11 @@ public class WebService implements IWebService
     public User saveUser(User user)
      {
         return userRepo.save(user);
+    }
+
+    @Override
+    public List<User> getAllUsers() 
+    {
+        return userRepo.findAll();
     }
 }
